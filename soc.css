@@ -1,0 +1,164 @@
+@font-face {
+    font-family: fonte;
+    src: url('./League_Spartan/static/LeagueSpartan-Regular.ttf');
+}
+
+@font-face {
+    font-family: bolde;
+    src: url('./League_Spartan/static/LeagueSpartan-Bold.ttf');
+}
+
+body {
+    overflow: auto;
+    background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    font-family: fonte;
+    color: rgb(66, 15, 66);
+}
+
+.container {
+    margin: 5%;
+}
+.div1 {
+    display: flex;
+}
+
+.subdiv1 {
+    width: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+.div1 h1 {
+    font-family: bolde;
+    font-size: 50px;
+}
+
+.star {
+    display: flex;
+    background-color: rgb(238, 234, 234);
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.s1 {
+    margin-left: 5%;
+}
+
+.s2 {
+    margin-left: 10%;
+}
+.star img {
+    width: 15px;
+    height: 20px;
+    margin: 3px;
+}
+.star h3 {
+    margin: 5px 0px 0px 5px;
+}
+.subdiv2 {
+   width: 100%; 
+   margin-left: 20%;
+}
+
+.div2 {
+    display: flex;
+    width: 100%;
+    color: white;
+}
+
+.div2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.div2 span {
+    font-weight: lighter;
+    color: pink;
+}
+
+.div2 h4 {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.div2 h3 {
+    font-size: 15px;
+}
+
+.buyer {
+    background-color: rgb(66, 14, 66);
+    border-radius: 10px;
+    margin: 0px 20px;
+    padding: 25px;
+    height: 30%;
+}
+
+.b1 {
+    margin-top: 1.5%;
+}
+
+.name {
+    display: flex;
+}
+
+.b2 {
+    margin-top: 2.5%;
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        background: url(images/bg-pattern-top-mobile.svg) top left no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+
+    .container {
+        justify-content: center;
+        width: 80%;
+    }
+    .div1, .star, .div2 {
+        display: block;
+    }
+
+    .div1 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .div1 p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .star h3 {
+        margin: 0%;
+        font-size: 15px;
+    }
+
+    .s1, .s2, .b1, .b2 {
+        margin: 0%;
+    }
+
+    .star {
+        margin-bottom: 5px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .buyer {
+        width: 90%;
+        height: 15%;
+        margin: 10px 0px;
+    }
+    
+    .subdiv2 {
+        margin: auto;
+        width: 80%;
+        margin-left: 15%;
+    }
+}
